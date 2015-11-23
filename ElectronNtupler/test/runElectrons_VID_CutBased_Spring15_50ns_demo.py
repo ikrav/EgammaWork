@@ -7,11 +7,11 @@ process.load("FWCore.MessageService.MessageLogger_cfi")
 process.load("Configuration.StandardSequences.Geometry_cff")
 
 process.load("Configuration.StandardSequences.FrontierConditions_GlobalTag_cff")
-# NOTE: the pick the right global tag!
+# NOTE: to pick the right global tag:
 #    for Spring15 50ns MC: global tag is 'auto:run2_mc_50ns'
 #    for Spring15 25ns MC: global tag is 'auto:run2_mc'
 #    for Run 2 data: global tag is 'auto:run2_data'
-#  as a rule, find the "auto" global tag in $CMSSW_RELEASE_BASE/src/Configuration/AlCa/python/autoCond.py
+#  as a rule, find the "auto" global tag in $CMSSW_RELEASE_BASE/Configuration/AlCa/python/autoCond.py
 #  This auto global tag will look up the "proper" global tag
 #  that is typically found in the DAS under the Configs for given dataset
 #  (although it can be "overridden" by requirements of a given release)
